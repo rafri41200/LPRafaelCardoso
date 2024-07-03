@@ -83,6 +83,16 @@ header nav.menu-descktop ul li{
   transition: .2s;
 }
 
+.logo-principal button{
+  border: 0px;
+  background-color: #000;
+  border-radius: 30px;
+  transition: .2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px #000;
+
+}
+
 
 
 /*estilo do topo do site*/
@@ -373,7 +383,54 @@ footer .logo-footer img{
   width: 200px;
 }
 
+#div-fixa{
+  position: fixed;
+  bottom: 10px;
+  margin: 0 20px;
+  cursor: pointer;  
+  
+}
+#div-fixa img{
+  width: 50px;
+  height: 50px;
+}
 
+#div-fixa a .flex-itens{
+  display: flex;
+  align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+  display: block;
+  font-weight: bold;
+  margin-left: 5px;
+
+
+}
+#div-fixa a{
+  text-decoration: none;
+  color: white;
+}
+
+.flutuar{
+  animation-name: flutuar2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar2{
+  form{
+    transform: translate3d(0, 0, 0);
+    filter: brightness(100%);
+  }
+  to{
+    transform: translate3d(0, -8px, 0);
+    filter: brightness(140%);
+
+  }
+}
 
 
 @media screen and (max-width: 1020px){
