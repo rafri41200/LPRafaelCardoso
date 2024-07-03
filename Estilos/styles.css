@@ -48,9 +48,8 @@ header > .interface{
   justify-content: space-between;
 }
 
-img{
-  width: 200px;
-}
+
+
 
 header a{
   color: #5c5c5c;
@@ -101,6 +100,7 @@ section.topo-do-site .flex{
   color: white;
   font-size: 42px;
   line-height: 40px;
+  margin-top: 0px;
 }
 
 .topo-do-site .txt-topo-site h1 spam{
@@ -117,8 +117,6 @@ section.topo-do-site .flex{
 .topo-do-site .img-topo-site img{
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
-  width: 400px;
-  padding-top: 0px;
 }
 
 
@@ -127,7 +125,7 @@ section.topo-do-site .flex{
     top: 0;
   }
   100%{
-    top: 30px;
+    top: 40px;
   }
 }
 
@@ -362,20 +360,36 @@ footer .line-footer p a{
 }
 /*responsividade*/
 
+.logo-nome, .logo{
+  display: none;
+}
+
+.logo-principal img{
+  display: block;
+  width: 200px;
+}
+
+footer .logo-footer img{
+  width: 200px;
+}
+
+
 
 
 @media screen and (max-width: 1020px){
   /*Classes gerais*/
+  .topo-do-site h1{
+    text-align: center; 
+  }
 
+  .logo-principal{
+    display: none;
+  }
   .btn-abrir-menu{
     display: block;
 }
   .flex{
     flex-direction: column;
-  }
-
-  .topo-do-site .flex{
-    flex-direction: column-reverse;
   }
   
   section.topo-do-site .img-topo-site{
@@ -386,7 +400,9 @@ footer .line-footer p a{
     width: 100%;
   }
   
-
+.logo-nome, .logo{
+  display: block;
+}
 
 
   /*cabeçalho*/
@@ -394,8 +410,9 @@ footer .line-footer p a{
 
 
   .menu-descktop, .btn-contato{
-      display: none;
-  }
+    display: none;
+}
+
 
   section.portifolio .flex{
     align-items: center;
@@ -415,6 +432,7 @@ footer .line-footer p a{
   h2.titulo{
     font-size: 34px;
     line-height: 30px;
+    
   }
 
   section.sobre{
@@ -424,6 +442,14 @@ footer .line-footer p a{
   .sobre .txt-sobre h2{
     font-size: 34px;
 
+  }
+
+  section.especialidades .interface h2{
+    margin-bottom: 20px;
+  }
+
+  section.especialidades .especialidades-box{
+    margin: 1px
   }
 
   .bnt-social{
@@ -518,4 +544,14 @@ footer .line-footer p a{
     background-color: #efc94c;
     color: #000;
   }
+
+  header .interface .logo img{
+    width: 80px;
+  }
+  
+  header .interface .logo-nome img{
+    width: 195px;
+    margin-right: 25px;
+  }
+
 }
