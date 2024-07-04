@@ -11,6 +11,10 @@ body{
   height: 100vh;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 h2.titulo{
   color: white;
   font-size: 40px;
