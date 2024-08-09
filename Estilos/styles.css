@@ -56,14 +56,14 @@ header > .interface{
 
 
 header a{
-  color: #5c5c5c;
+  color: white;
   text-decoration: none;
   display: inline-block;
   transition:.2s ;
 }
 
 header nav.menu-descktop  a:hover{
-  color: white;
+  color: #efc94c;
   transform: scale(1.05);
 }
 
